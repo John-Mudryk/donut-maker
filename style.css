@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, rgb(173, 117, 52), rgb(70, 31, 0));
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(223, 193, 184);
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: auto;
+    border: none;
+    border-radius: .5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    position: relative;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main a {
+    color: rgb(189, 141, 114);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    border: .1rem solid grey;
+    background-color: rgba(126, 101, 80, 0.582);
+    border-radius: 3rem;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
+    margin-bottom: auto;
+}
+
+.button {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: #a664ac;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+.button:disabled {
+    background-color: #7e5d5d;
+    cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+    background-color: #ae70c7;
+}
+
+#info {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.button:hover:not(:disabled) {
+    background-color: #a288ac;
+;
+}
+
+#info {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.donut-section {
+    margin-bottom: 2rem;
+}
+
+.donut-icon {
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    border-radius: 0.5rem;
+    padding: 0;
+    top: 2rem;
+    left: 0;
+    list-style: none;
+    min-width: 9rem;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+
+.about-description {
+    background-color: #e7ddcc; /* Soft, warm background color */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Styling for headers within the description */
+.about-description h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #e55b50; /* Add a distinct color for the header */
+}
+
+/* Emphasize keywords */
+.about-description strong {
+    color: #d8553e;
+    font-weight: bold;
+}
+
+/* Add a subtle hover effect for interactive feel */
+.about-description:hover {
+    background-color: #ffe9cc;
+    transition: background-color 0.3s ease;
+}
